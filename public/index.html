@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deftones</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      transition: background-color 1s ease;
+      color: #fff;
+    }
+
+    #site-header .nav-link {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    #site-header .nav-link:hover {
+      color: #ffffff;
+    }
+
+    #carrossel-deftones .carousel-inner {
+      height: 250px;
+    }
+    #carrossel-deftones .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+    @media (min-width: 768px) {
+      #carrossel-deftones .carousel-inner {
+        height: 400px;
+      }
+    }
+    @media (min-width: 1200px) {
+      #carrossel-deftones .carousel-inner {
+        height: 550px;
+      }
+    }
+
+    #album-section .card {
+      border: none;
+      border-radius: 12px;
+      background-color: rgba(0,0,0,0.6);
+      transition: background-color 0.5s ease;
+    }
+    #album-section .card-body {
+      padding: 2rem;
+    }
+    #album-section .card h2,
+    #album-section .card p {
+      transition: all 0.5s ease;
+    }
+    .fade-out {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #site-footer {
+      border-top: 3px solid #444;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="site-header" class="bg-dark text-white py-3">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <h1 class="h3 mb-3 mb-md-0">Deftones</h1>
+      <nav class="nav">
+        <a class="nav-link text-white" href="#">Home</a>
+        <a class="nav-link text-white" href="#">Sobre</a>
+        <a class="nav-link text-white" href="#">Músicas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section class="container my-5" id="sobre-banda">
+    <h2 class="h4">Sobre a Banda</h2>
+    <p>
+      O Deftones é uma banda de metal alternativo que mistura elementos de rock experimental, shoegaze, post-rock e, no início da carreira, se destacaram na cena nu metal. A banda é conhecida por combinar atmosferas pesadas e melódicas, com a sonoridade evolucionária que mistura influências do punk, hip-hop e metal.
+    </p>
+  </section>
+
+  <!-- Carrossel -->
+  <section class="container my-5" id="carrossel-deftones">
+    <div id="deftonesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100000">
+      <div class="carousel-inner">
+        
+        <!-- Slide 1 -->
+        <div class="carousel-item active" 
+             data-bg="#d39d83" 
+             data-album="Around The Fur" 
+             data-desc="Álbum de 1997 'Nós realmente não prestamos muita atenção a isso. Lembro-me de quando esses nomes de subgêneros não existiam. Era apenas metal. Então, não acho que tomamos a decisão de nos afastar [do nu metal] - nunca prestamos atenção ao que os outros estavam fazendo. Apenas fizemos o que achamos certo e tentamos fazer um álbum matador' e conseguiram!'."
+             data-audio="./audios/Deftones - My Own Summer.mp3">
+          <img src="./imagens/myown.png" class="d-block w-100" alt="Capa 1">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" 
+             data-bg="#b01f1a" 
+             data-album="Koi No Yokan (恋の予感)" 
+             data-desc="Koi no yokan (恋の予感) é uma expressão japonesa que significa premonição de amor ou o pressentimento de que o amor se tornará inevitável. Refere-se a um sentimento de conexão e antecipação de um futuro amor com alguém, mesmo que não haja amor romântico no presente. A expressão também é o título do sétimo álbum de estúdio da banda americana de metal alternativo Deftones, lançado em 2012.'."
+             data-audio="./audios/Deftones - Entombed.mp3">
+          <img src="./imagens/kny.png" class="d-block w-100" alt="Capa 2">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" 
+             data-bg="#a6b0b0" 
+             data-album="Diamond Eyes" 
+             data-desc="O álbum “Diamond Eyes” do Deftones, lançado em 2010 equilibra a agressividade característica do metal alternativo com passagens atmosféricas e melódicas, criando uma sensação de contraste entre intensidade e delicadeza.'."
+             data-audio="./audios/Do You Believe - Deftones (youtube).mp3">
+          <img src="./imagens/dmnd.png" class="d-block w-100" alt="Capa 3">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item" 
+             data-bg="#444444" 
+             data-album="White Pony" 
+             data-desc="Lançado em 2000, 'O álbum “White Pony”, lançado em 2000, é amplamente considerado a obra-prima do Deftones. Nele, a banda expandiu seu som além do nu metal tradicional, explorando paisagens sonoras mais experimentais, atmosféricas e sensuais,'."
+             data-audio="./audios/Digital Bath - Deftones.mp3">
+          <img src="./imagens/white.jpg" class="d-block w-100" alt="Capa 4">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#deftonesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#deftonesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Áudio -->
+  <audio id="track-player" autoplay></audio>
+
+  <!-- Álbum -->
+  <section class="container my-5" id="album-section">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="h4 fade-in" id="album-title" style="color: #fff;">Around The Fur</h2>
+        <p class="fade-in" id="album-desc" style="color: #fff;">Álbum de 1997 com destaque para 'My Own Summer' e 'Be Quiet and Drive'.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; Criado por Arthur Nunes Linhares.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS para background, texto e música -->
+  <script>
+    const carousel = document.getElementById('deftonesCarousel');
+    const albumTitle = document.getElementById('album-title');
+    const albumDesc = document.getElementById('album-desc');
+    const player = document.getElementById('track-player');
+
+    function updateSlide(activeItem) {
+      const bgColor = activeItem.getAttribute('data-bg');
+      const albumName = activeItem.getAttribute('data-album');
+      const albumDescription = activeItem.getAttribute('data-desc');
+      const audioSrc = activeItem.getAttribute('data-audio');
+
+      // background
+      document.body.style.backgroundColor = bgColor;
+
+      // animação do texto
+      albumTitle.classList.remove('fade-in');
+      albumTitle.classList.add('fade-out');
+      albumDesc.classList.remove('fade-in');
+      albumDesc.classList.add('fade-out');
+
+      setTimeout(() => {
+        albumTitle.textContent = albumName;
+        albumDesc.textContent = albumDescription;
+
+        albumTitle.classList.remove('fade-out');
+        albumTitle.classList.add('fade-in');
+        albumDesc.classList.remove('fade-out');
+        albumDesc.classList.add('fade-in');
+      }, 300);
+
+      // muda música
+      player.src = audioSrc;
+      player.play();
+    }
+
+    // inicia com o primeiro slide
+    const firstItem = carousel.querySelector('.carousel-item.active');
+    updateSlide(firstItem);
+
+    // escuta mudança de slide
+    carousel.addEventListener('slid.bs.carousel', function(event) {
+      const activeItem = event.relatedTarget;
+      updateSlide(activeItem);
+    });
+  </script>
+</body>
+</html>
