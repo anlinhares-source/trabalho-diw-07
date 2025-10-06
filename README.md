@@ -19,11 +19,13 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-![<<  COLOQUE A IMAGEM AQUI >>](public/imagens/image.png)
+<img width="1919" height="1064" alt="main" src="https://github.com/user-attachments/assets/594fa235-5ec4-4f96-b9ff-39e54ee4b8f6" />
+
 
 ## Print da página de detalhes do item
 
-![<<  COLOQUE A IMAGEM AQUI >>](public/imagens/main.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8d5350ef-1765-4510-beb4-44d643ba05fe" />
+
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
